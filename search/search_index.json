@@ -1,0 +1,234 @@
+{
+    "docs": [
+        {
+            "location": "/whatisjulia/", 
+            "text": "History\n\n\nCreated in 2009 by a few computer science academics.\nFirst public version in 2012.\nVersion 1.0 in 2018\n\n\nManifesto of the first public release in 2012\n\n\n\n\nWe want a language that\u2019s open source, with a liberal license. We want the speed of C with the dynamism of Ruby. We want a language that\u2019s homoiconic, with true macros like Lisp, but with obvious, familiar mathematical notation like Matlab. We want something as usable for general programming as Python, as easy for statistics as R, as natural for string processing as Perl, as powerful for linear algebra as Matlab, as good at gluing programs together as the shell. Something that is dirt simple to learn, yet keeps the most serious hackers happy. We want it interactive and we want it compiled. \n\n\n\n\n\n\nFast: Julia was designed from the beginning for high performance. Julia programs compile to efficient native code for multiple platforms via LLVM.\n\n\nGeneral: It uses multiple dispatch as a paradigm, making it easy to express many object-oriented and functional programming patterns. The standard library provides asynchronous I/O, process control, logging, profiling, a package manager, and more.\n\n\nDynamic: Julia is dynamically-typed, feels like a scripting language, and has good support for interactive use.\n\n\nTechnical: It excels at numerical computing with a syntax that is great for math, many supported numeric data types, and parallelism out of the box. Julia\u2019s multiple dispatch is a natural fit for defining number and array-like data types.\n\n\nOptionally typed: Julia has a rich language of descriptive data types, and type declarations can be used to clarify and solidify programs.\n\n\nComposable: Julia\u2019s packages naturally work well together. Matrices of unit quantities, or data table columns of currencies and colors, just work \u2014 and with good performance.\n\n\n\n\nFor whom ?\n\n\n\n\nDeveloping algorithms\n\n\nNeed for speed and/or genericity\n\n\nMathematical models\n\n\n\n\nLess useful if\n\n\n\n\nyou are mainly using existing libraries/algorithms (for data analysis e.g.)\n\n\n\n\nExamples\n\n\nIt's fast\n\n\nX = rand()\nA = rand()\nY = A * B\n\n\n\n\nIt's generic", 
+            "title": "What is julia"
+        }, 
+        {
+            "location": "/whatisjulia/#history", 
+            "text": "Created in 2009 by a few computer science academics.\nFirst public version in 2012.\nVersion 1.0 in 2018  Manifesto of the first public release in 2012   We want a language that\u2019s open source, with a liberal license. We want the speed of C with the dynamism of Ruby. We want a language that\u2019s homoiconic, with true macros like Lisp, but with obvious, familiar mathematical notation like Matlab. We want something as usable for general programming as Python, as easy for statistics as R, as natural for string processing as Perl, as powerful for linear algebra as Matlab, as good at gluing programs together as the shell. Something that is dirt simple to learn, yet keeps the most serious hackers happy. We want it interactive and we want it compiled.     Fast: Julia was designed from the beginning for high performance. Julia programs compile to efficient native code for multiple platforms via LLVM.  General: It uses multiple dispatch as a paradigm, making it easy to express many object-oriented and functional programming patterns. The standard library provides asynchronous I/O, process control, logging, profiling, a package manager, and more.  Dynamic: Julia is dynamically-typed, feels like a scripting language, and has good support for interactive use.  Technical: It excels at numerical computing with a syntax that is great for math, many supported numeric data types, and parallelism out of the box. Julia\u2019s multiple dispatch is a natural fit for defining number and array-like data types.  Optionally typed: Julia has a rich language of descriptive data types, and type declarations can be used to clarify and solidify programs.  Composable: Julia\u2019s packages naturally work well together. Matrices of unit quantities, or data table columns of currencies and colors, just work \u2014 and with good performance.", 
+            "title": "History"
+        }, 
+        {
+            "location": "/whatisjulia/#for-whom", 
+            "text": "Developing algorithms  Need for speed and/or genericity  Mathematical models   Less useful if   you are mainly using existing libraries/algorithms (for data analysis e.g.)", 
+            "title": "For whom ?"
+        }, 
+        {
+            "location": "/whatisjulia/#examples", 
+            "text": "", 
+            "title": "Examples"
+        }, 
+        {
+            "location": "/whatisjulia/#its-fast", 
+            "text": "X = rand()\nA = rand()\nY = A * B", 
+            "title": "It's fast"
+        }, 
+        {
+            "location": "/whatisjulia/#its-generic", 
+            "text": "", 
+            "title": "It's generic"
+        }, 
+        {
+            "location": "/first_steps/", 
+            "text": "Install Julia\n\n\nTest Julia online\n\n\nYou can try Julia online and for free at \nhttp://juliabox.com\n.\nYou will need to create a account (or log with your Github or Google account)\nOnce your are connected\n\n\nInstall on your machine\n\n\nYou can download the Julia binaries from \nhttp://julialang.org/downloads\n\n\nIf you want a all-in-one package you can use the JuliaPro distribution (similar to e.g. Anaconda for Python). The JuliaPro distribution is free but requires a registration for downloading and installing new packages.\n\n\nThe REPL\n\n\nOnce Julia is installed, you can launch the Julia REPL (\"Read Eval Print Line\", like the R or python/ipython command line)\n\n\nThe REPL of Julia is very powerful.\n\n\n\n\nShell mode : start with a \";\" (e.g. \n;ls\n )\n\n\nPackage mode : start with a \"]\" (e.g. \n]add Plots\n )\n\n\nHelp mode : start with a \"?\" (e.g. \n?cos\n )\n\n\n\n\nIn a file\n\n\nIn toto.jl :\n\n\nfunction addfunc(a,b)\n    return a+b\nend\n\naddfunc(3,4)\n\n\n\n\nThen in the REPL\n\ninclude(toto.jl)", 
+            "title": "First steps"
+        }, 
+        {
+            "location": "/first_steps/#install-julia", 
+            "text": "", 
+            "title": "Install Julia"
+        }, 
+        {
+            "location": "/first_steps/#test-julia-online", 
+            "text": "You can try Julia online and for free at  http://juliabox.com .\nYou will need to create a account (or log with your Github or Google account)\nOnce your are connected", 
+            "title": "Test Julia online"
+        }, 
+        {
+            "location": "/first_steps/#install-on-your-machine", 
+            "text": "You can download the Julia binaries from  http://julialang.org/downloads  If you want a all-in-one package you can use the JuliaPro distribution (similar to e.g. Anaconda for Python). The JuliaPro distribution is free but requires a registration for downloading and installing new packages.", 
+            "title": "Install on your machine"
+        }, 
+        {
+            "location": "/first_steps/#the-repl", 
+            "text": "Once Julia is installed, you can launch the Julia REPL (\"Read Eval Print Line\", like the R or python/ipython command line)  The REPL of Julia is very powerful.   Shell mode : start with a \";\" (e.g.  ;ls  )  Package mode : start with a \"]\" (e.g.  ]add Plots  )  Help mode : start with a \"?\" (e.g.  ?cos  )", 
+            "title": "The REPL"
+        }, 
+        {
+            "location": "/first_steps/#in-a-file", 
+            "text": "In toto.jl :  function addfunc(a,b)\n    return a+b\nend\n\naddfunc(3,4)  Then in the REPL include(toto.jl)", 
+            "title": "In a file"
+        }, 
+        {
+            "location": "/tools/", 
+            "text": "Tools\n\n\nJuliaPro/JuliaBox\n\n\nJuliaPro is a distribution of curated packages for Julia (as Anaconda for Python, or Matlab with a set of toolboxes). It is provided freely (but requires a registration to download and install packages) by JuliaComputing.\n\n\nJuliabox is an online environment (based on Jupyter notebooks) with Julia preinstalled.\n\n\nEditors\n\n\nYou can use any editor and the REPL but some tools (IDE) are developed in the community especially to ease data analysis and exploration.\n\n\n\n\nJulia in VScode\n\n\nJuno (Atom)\n\n\nJupyter(lab)\n\n\n\n\nThe REPL\n\n\nJupyter\n\n\nJulia works very well in Jupyter notebook (in fact the name Jupyter which remplaces the original IPython notebook comes from JU(lia)-PYT(hon)-R once it was realized that most of it concept was language-agnostic)\n\n\nJuno\n\n\nJuno can be seen has\n\n\nVSCode\n\n\nVSCode is very similar to Atom (but developed )\n\n\nSpeed-up reloads\n\n\nRevise.jl\n\n\nExplore the code\n\n\nMacros @code_llvm, @code_native, @code_warn\n\n\nLearning Ressources\n\n\nThe main Julia documentation is available here :\n\n\nNote :", 
+            "title": "Tools"
+        }, 
+        {
+            "location": "/tools/#tools", 
+            "text": "", 
+            "title": "Tools"
+        }, 
+        {
+            "location": "/tools/#juliaprojuliabox", 
+            "text": "JuliaPro is a distribution of curated packages for Julia (as Anaconda for Python, or Matlab with a set of toolboxes). It is provided freely (but requires a registration to download and install packages) by JuliaComputing.  Juliabox is an online environment (based on Jupyter notebooks) with Julia preinstalled.", 
+            "title": "JuliaPro/JuliaBox"
+        }, 
+        {
+            "location": "/tools/#editors", 
+            "text": "You can use any editor and the REPL but some tools (IDE) are developed in the community especially to ease data analysis and exploration.   Julia in VScode  Juno (Atom)  Jupyter(lab)", 
+            "title": "Editors"
+        }, 
+        {
+            "location": "/tools/#the-repl", 
+            "text": "", 
+            "title": "The REPL"
+        }, 
+        {
+            "location": "/tools/#jupyter", 
+            "text": "Julia works very well in Jupyter notebook (in fact the name Jupyter which remplaces the original IPython notebook comes from JU(lia)-PYT(hon)-R once it was realized that most of it concept was language-agnostic)", 
+            "title": "Jupyter"
+        }, 
+        {
+            "location": "/tools/#juno", 
+            "text": "Juno can be seen has", 
+            "title": "Juno"
+        }, 
+        {
+            "location": "/tools/#vscode", 
+            "text": "VSCode is very similar to Atom (but developed )", 
+            "title": "VSCode"
+        }, 
+        {
+            "location": "/tools/#speed-up-reloads", 
+            "text": "Revise.jl", 
+            "title": "Speed-up reloads"
+        }, 
+        {
+            "location": "/tools/#explore-the-code", 
+            "text": "Macros @code_llvm, @code_native, @code_warn", 
+            "title": "Explore the code"
+        }, 
+        {
+            "location": "/tools/#learning-ressources", 
+            "text": "The main Julia documentation is available here :  Note :", 
+            "title": "Learning Ressources"
+        }, 
+        {
+            "location": "/fast_julia/", 
+            "text": "Why is it fast ?\n\n\nThe speed of Julia comes from several core\n\n\nFirst Julia use the LLVM compiler to do Just-In-Time (JIT) compilation.\nJIT technics\nOthers languages\n\n\nBut Julia combines this JIT approach with another concept : multiple dispatch.\n\n\nMultiple dispatch consists in specifying a function over the types of all its arguments.\n\n\nA function \"add(a,b)\" is specified in methods depending on the types of \"a\" and \"b\".\n\nadd(2,3)\n will call (if it exists) \nadd(Int,Int)\n whereas \nadd(2.0,3.0)\n will call \nadd(Float,Float)\n\n\nSo the first time (\"Just-in-time\") a function is called with some arguments, the Julia processor will determine what are the types of the arguments, what is the type of the output and created a static typed compiled version of this function. The next time it's called, the code executed is directly the compiled method specified for these particular arguments. That is, instead of keeping ambiguities on the types all along the code execution, as it would happen in a dynamic language like Python (which is the main reason for the slowness of these languages).\n\n\nAnd in the meantime, the design of Julia allows to get to these specified static typed compiled functions far more easier that in classical low-level languages as C, as you do not have to take care yourself of how the compilation happens when you compose/combine Julia codes. \n\n\nWhy Julia is slow\n\n\nWhat does the above implies to write fast Julia ?\n\n\n\n\nLaunching the Julia process (i.e. opening the REPL, or a Jupyter notebook), the initialization can be a bit slow. That's why Julia is not well suited for short scripts runed\n\n\nThe first time you execute a code/launch a package, it get's compiled and that can be slow.\n\n\nYou need to put your code in functions (so it gets compiled once and can be reused).\n\n\nYour functions need to be type-stable (so )\n\n\nYou need to avoid global variables (as by definition they can be changed anywhere/anytime so the compiler can not make any assumptions) or used constant ones (\nconst\n).\n\n\nYou don't need (most of the time) to indicate your types, the type inferrer is getting better and better.\n\n\n\n\nYou can write loops or vectors (as it fits you/your problem) as speed does not come from some predefined fast vectorized constructs.\n\n\nHow to benchmark/optimize your code\n\n\nType stability\n\n\nBenchmarkTools\n\n\n# install BenchmarkTools\nusing Pkg\nPkg.add(\nBenchmarkTools\n)\n\n# Load it\nusing BenchmarkTools\n\nf(x)=2x\n@btime f(4)\n\n\n\n\nThere are a\nAllocations", 
+            "title": "Fast Julia"
+        }, 
+        {
+            "location": "/fast_julia/#why-is-it-fast", 
+            "text": "The speed of Julia comes from several core  First Julia use the LLVM compiler to do Just-In-Time (JIT) compilation.\nJIT technics\nOthers languages  But Julia combines this JIT approach with another concept : multiple dispatch.  Multiple dispatch consists in specifying a function over the types of all its arguments.  A function \"add(a,b)\" is specified in methods depending on the types of \"a\" and \"b\". add(2,3)  will call (if it exists)  add(Int,Int)  whereas  add(2.0,3.0)  will call  add(Float,Float)  So the first time (\"Just-in-time\") a function is called with some arguments, the Julia processor will determine what are the types of the arguments, what is the type of the output and created a static typed compiled version of this function. The next time it's called, the code executed is directly the compiled method specified for these particular arguments. That is, instead of keeping ambiguities on the types all along the code execution, as it would happen in a dynamic language like Python (which is the main reason for the slowness of these languages).  And in the meantime, the design of Julia allows to get to these specified static typed compiled functions far more easier that in classical low-level languages as C, as you do not have to take care yourself of how the compilation happens when you compose/combine Julia codes.", 
+            "title": "Why is it fast ?"
+        }, 
+        {
+            "location": "/fast_julia/#why-julia-is-slow", 
+            "text": "What does the above implies to write fast Julia ?   Launching the Julia process (i.e. opening the REPL, or a Jupyter notebook), the initialization can be a bit slow. That's why Julia is not well suited for short scripts runed  The first time you execute a code/launch a package, it get's compiled and that can be slow.  You need to put your code in functions (so it gets compiled once and can be reused).  Your functions need to be type-stable (so )  You need to avoid global variables (as by definition they can be changed anywhere/anytime so the compiler can not make any assumptions) or used constant ones ( const ).  You don't need (most of the time) to indicate your types, the type inferrer is getting better and better.   You can write loops or vectors (as it fits you/your problem) as speed does not come from some predefined fast vectorized constructs.", 
+            "title": "Why Julia is slow"
+        }, 
+        {
+            "location": "/fast_julia/#how-to-benchmarkoptimize-your-code", 
+            "text": "Type stability", 
+            "title": "How to benchmark/optimize your code"
+        }, 
+        {
+            "location": "/fast_julia/#benchmarktools", 
+            "text": "# install BenchmarkTools\nusing Pkg\nPkg.add( BenchmarkTools )\n\n# Load it\nusing BenchmarkTools\n\nf(x)=2x\n@btime f(4)  There are a\nAllocations", 
+            "title": "BenchmarkTools"
+        }, 
+        {
+            "location": "/building_pkg/", 
+            "text": "Dependencies\n\n\nimporting\n\n\nexporting functions\n\n\nThe Julian way\n\n\ngenericity\n\n\nDocumenting\n\n\nRegister your package", 
+            "title": "Building Packages"
+        }, 
+        {
+            "location": "/building_pkg/#dependencies", 
+            "text": "", 
+            "title": "Dependencies"
+        }, 
+        {
+            "location": "/building_pkg/#importing", 
+            "text": "", 
+            "title": "importing"
+        }, 
+        {
+            "location": "/building_pkg/#exporting-functions", 
+            "text": "", 
+            "title": "exporting functions"
+        }, 
+        {
+            "location": "/building_pkg/#the-julian-way", 
+            "text": "genericity", 
+            "title": "The Julian way"
+        }, 
+        {
+            "location": "/building_pkg/#documenting", 
+            "text": "", 
+            "title": "Documenting"
+        }, 
+        {
+            "location": "/building_pkg/#register-your-package", 
+            "text": "", 
+            "title": "Register your package"
+        }, 
+        {
+            "location": "/interop/", 
+            "text": "Python\n\n\nUse Python packages from Julia\n\n\nPycall\n\n\nExample :\n\n\nUse Julia from Python\n\n\nCaveats when coming from Python\n\n\nhttps://docs.julialang.org/en/latest/manual/noteworthy-differences/#Noteworthy-differences-from-Python-1\n- Arrays are 1-base indexed (but you can use)\n- \n\n\nR\n\n\nUse R packages from Julia\n\n\n[RCall]\n\n\nC\n\n\nMatlab\n\n\nhttps://docs.julialang.org/en/latest/manual/noteworthy-differences/#Noteworthy-differences-from-Python-1\n\n\nhttps://github.com/JuliaInterop/MATLAB.jl", 
+            "title": "Interop with other languages"
+        }, 
+        {
+            "location": "/interop/#python", 
+            "text": "", 
+            "title": "Python"
+        }, 
+        {
+            "location": "/interop/#use-python-packages-from-julia", 
+            "text": "Pycall  Example :", 
+            "title": "Use Python packages from Julia"
+        }, 
+        {
+            "location": "/interop/#use-julia-from-python", 
+            "text": "", 
+            "title": "Use Julia from Python"
+        }, 
+        {
+            "location": "/interop/#caveats-when-coming-from-python", 
+            "text": "https://docs.julialang.org/en/latest/manual/noteworthy-differences/#Noteworthy-differences-from-Python-1\n- Arrays are 1-base indexed (but you can use)\n-", 
+            "title": "Caveats when coming from Python"
+        }, 
+        {
+            "location": "/interop/#r", 
+            "text": "", 
+            "title": "R"
+        }, 
+        {
+            "location": "/interop/#use-r-packages-from-julia", 
+            "text": "[RCall]", 
+            "title": "Use R packages from Julia"
+        }, 
+        {
+            "location": "/interop/#c", 
+            "text": "", 
+            "title": "C"
+        }, 
+        {
+            "location": "/interop/#matlab", 
+            "text": "https://docs.julialang.org/en/latest/manual/noteworthy-differences/#Noteworthy-differences-from-Python-1  https://github.com/JuliaInterop/MATLAB.jl", 
+            "title": "Matlab"
+        }, 
+        {
+            "location": "/scripting/", 
+            "text": "", 
+            "title": "I want to use some packages in a script"
+        }, 
+        {
+            "location": "/developing/", 
+            "text": "", 
+            "title": "I want to start a package"
+        }
+    ]
+}
