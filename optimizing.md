@@ -1,2 +1,0 @@
-Type stability
-Allocations
