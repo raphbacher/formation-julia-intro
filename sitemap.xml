@@ -76,12 +76,6 @@
     
         
     <url>
-     <loc>https://raphbacher.github.io/formation-julia-intro//fast_julia/</loc>
-     <lastmod>2018-11-14</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
      <loc>https://raphbacher.github.io/formation-julia-intro//interop/</loc>
      <lastmod>2018-11-14</lastmod>
      <changefreq>daily</changefreq>
