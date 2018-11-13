@@ -13,7 +13,7 @@
         <meta name="description" content="An instroduction to the Julia Programming Language">
       
       
-        <link rel="canonical" href="https://raphbacher.github.io/formation-julia-intro/">
+        <link rel="canonical" href="https://raphbacher.github.io/formation-julia-intro/examples/">
       
       
         <meta name="author" content="Raphael Bacher">
@@ -37,22 +37,22 @@
       
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
-      <link rel="shortcut icon" href="./assets/images/favicon.png">
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-0.17.3, mkdocs-material-2.7.3">
     
     
       
-        <title>Julia Introduction</title>
+        <title>Scientific applications - Julia Introduction</title>
       
     
     
-      <link rel="stylesheet" href="./assets/stylesheets/application.8d40d89b.css">
+      <link rel="stylesheet" href="../assets/stylesheets/application.8d40d89b.css">
       
-        <link rel="stylesheet" href="./assets/stylesheets/application-palette.6079476c.css">
+        <link rel="stylesheet" href="../assets/stylesheets/application-palette.6079476c.css">
       
     
     
-      <script src="./assets/javascripts/modernizr.1aa3b519.js"></script>
+      <script src="../assets/javascripts/modernizr.1aa3b519.js"></script>
     
     
       <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
@@ -99,7 +99,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
     
-      <a href="#introduction-to-julia" tabindex="1" class="md-skip">
+      <a href="#various-scientific-domains-examples" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -125,7 +125,7 @@
                 Julia Introduction
               </span>
               <span class="md-header-nav__topic">
-                Home
+                Scientific applications
               </span>
             
           
@@ -197,14 +197,16 @@
       
         
 
-<nav class="md-tabs" data-md-component="tabs">
+  
+
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
   <div class="md-tabs__inner md-grid">
     <ul class="md-tabs__list">
       
         
   <li class="md-tabs__item">
     
-      <a href="." title="Home" class="md-tabs__link md-tabs__link--active">
+      <a href=".." title="Home" class="md-tabs__link">
         Home
       </a>
     
@@ -218,7 +220,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="first_steps/" title="First steps" class="md-tabs__link">
+        <a href="../first_steps/" title="First steps" class="md-tabs__link">
           First steps
         </a>
       
@@ -231,7 +233,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="tutorials/01_start_julia/" title="Tutorials" class="md-tabs__link">
+        <a href="../tutorials/01_start_julia/" title="Tutorials" class="md-tabs__link">
           Tutorials
         </a>
       
@@ -244,7 +246,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="fast_julia/" title="To go further" class="md-tabs__link">
+        <a href="../fast_julia/" title="To go further" class="md-tabs__link">
           To go further
         </a>
       
@@ -257,7 +259,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="examples/" title="Scientific applications" class="md-tabs__link">
+        <a href="./" title="Scientific applications" class="md-tabs__link md-tabs__link--active">
           Scientific applications
         </a>
       
@@ -314,90 +316,11 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="toc">
-        Home
-      </label>
-    
-    <a href="." title="Home" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href=".." title="Home" class="md-nav__link">
       Home
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#what-is-julia" title="What is Julia" class="md-nav__link">
-    What is Julia
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#for-what-and-whom" title="For what and whom ?" class="md-nav__link">
-    For what and whom ?
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#what-does-it-look-like" title="What does it look like" class="md-nav__link">
-    What does it look like
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#a-tool-for-doing-better-science" title="A tool for doing better science" class="md-nav__link">
-    A tool for doing better science
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#high-level-and-efficient" title="High level and efficient" class="md-nav__link">
-    High level and efficient
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#build-for-collaboration" title="Build for collaboration" class="md-nav__link">
-    Build for collaboration
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
     
@@ -407,7 +330,7 @@
 
 
   <li class="md-nav__item">
-    <a href="15_09_2018_training/" title="November 15 training" class="md-nav__link">
+    <a href="../15_09_2018_training/" title="November 15 training" class="md-nav__link">
       November 15 training
     </a>
   </li>
@@ -438,7 +361,7 @@
 
 
   <li class="md-nav__item">
-    <a href="first_steps/" title="First steps" class="md-nav__link">
+    <a href="../first_steps/" title="First steps" class="md-nav__link">
       First steps
     </a>
   </li>
@@ -450,7 +373,7 @@
 
 
   <li class="md-nav__item">
-    <a href="ecosystem/" title="Tools" class="md-nav__link">
+    <a href="../ecosystem/" title="Tools" class="md-nav__link">
       Tools
     </a>
   </li>
@@ -486,7 +409,7 @@
 
 
   <li class="md-nav__item">
-    <a href="tutorials/01_start_julia/" title="Intro" class="md-nav__link">
+    <a href="../tutorials/01_start_julia/" title="Intro" class="md-nav__link">
       Intro
     </a>
   </li>
@@ -498,7 +421,7 @@
 
 
   <li class="md-nav__item">
-    <a href="tutorials/02.Linear_Algebra/" title="Linear Algebra" class="md-nav__link">
+    <a href="../tutorials/02.Linear_Algebra/" title="Linear Algebra" class="md-nav__link">
       Linear Algebra
     </a>
   </li>
@@ -510,7 +433,7 @@
 
 
   <li class="md-nav__item">
-    <a href="tutorials/03.Using_packages/" title="Using Packages" class="md-nav__link">
+    <a href="../tutorials/03.Using_packages/" title="Using Packages" class="md-nav__link">
       Using Packages
     </a>
   </li>
@@ -522,7 +445,7 @@
 
 
   <li class="md-nav__item">
-    <a href="tutorials/04.Intro_to_plotting/" title="Plotting" class="md-nav__link">
+    <a href="../tutorials/04.Intro_to_plotting/" title="Plotting" class="md-nav__link">
       Plotting
     </a>
   </li>
@@ -534,7 +457,7 @@
 
 
   <li class="md-nav__item">
-    <a href="tutorials/05.Julia_is_fast/" title="Julia is fast" class="md-nav__link">
+    <a href="../tutorials/05.Julia_is_fast/" title="Julia is fast" class="md-nav__link">
       Julia is fast
     </a>
   </li>
@@ -546,7 +469,7 @@
 
 
   <li class="md-nav__item">
-    <a href="tutorials/06.Multiple_dispatch/" title="Multiple dispatch" class="md-nav__link">
+    <a href="../tutorials/06.Multiple_dispatch/" title="Multiple dispatch" class="md-nav__link">
       Multiple dispatch
     </a>
   </li>
@@ -582,7 +505,7 @@
 
 
   <li class="md-nav__item">
-    <a href="fast_julia/" title="How to get Fast Julia" class="md-nav__link">
+    <a href="../fast_julia/" title="How to get Fast Julia" class="md-nav__link">
       How to get Fast Julia
     </a>
   </li>
@@ -594,7 +517,7 @@
 
 
   <li class="md-nav__item">
-    <a href="interop/" title="Interop with other languages" class="md-nav__link">
+    <a href="../interop/" title="Interop with other languages" class="md-nav__link">
       Interop with other languages
     </a>
   </li>
@@ -609,10 +532,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6" checked>
     
     <label class="md-nav__link" for="nav-6">
       Scientific applications
@@ -628,11 +553,77 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="examples/" title="Scientific applications" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Scientific applications
+      </label>
+    
+    <a href="./" title="Scientific applications" class="md-nav__link md-nav__link--active">
       Scientific applications
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#economy" title="Economy" class="md-nav__link">
+    Economy
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bioinformatics" title="Bioinformatics" class="md-nav__link">
+    Bioinformatics
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ecologybiodiversity" title="Ecology/Biodiversity" class="md-nav__link">
+    Ecology/Biodiversity
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stats" title="Stats" class="md-nav__link">
+    Stats
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#images" title="Images" class="md-nav__link">
+    Images
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -662,50 +653,37 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#what-is-julia" title="What is Julia" class="md-nav__link">
-    What is Julia
+  <a href="#economy" title="Economy" class="md-nav__link">
+    Economy
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#for-what-and-whom" title="For what and whom ?" class="md-nav__link">
-    For what and whom ?
+  <a href="#bioinformatics" title="Bioinformatics" class="md-nav__link">
+    Bioinformatics
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#what-does-it-look-like" title="What does it look like" class="md-nav__link">
-    What does it look like
+  <a href="#ecologybiodiversity" title="Ecology/Biodiversity" class="md-nav__link">
+    Ecology/Biodiversity
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#a-tool-for-doing-better-science" title="A tool for doing better science" class="md-nav__link">
-    A tool for doing better science
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#high-level-and-efficient" title="High level and efficient" class="md-nav__link">
-    High level and efficient
+  <a href="#stats" title="Stats" class="md-nav__link">
+    Stats
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#build-for-collaboration" title="Build for collaboration" class="md-nav__link">
-    Build for collaboration
+      
+        <li class="md-nav__item">
+  <a href="#images" title="Images" class="md-nav__link">
+    Images
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -725,54 +703,42 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/raphbacher/formation-julia-intro/edit/master/docs/index.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/raphbacher/formation-julia-intro/edit/master/docs/examples.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="introduction-to-julia">Introduction to Julia<a class="headerlink" href="#introduction-to-julia" title="Permanent link">&para;</a></h1>
-<p>The goal of this website is to provide an overview and an Introduction to the scientific programming language Julia.
-It relies extensively on resources provided by the Julia community and in particular the <a href="https://juliang.org">Julia website</a>, the <a href="https://docs.julialang.org/">Julia docs</a> and material from the <a href="https://github.com/JuliaComputing/JuliaBoxTutorials">JuliaBox tutorials</a>.</p>
-<p>This website does not seek to be provide an exhaustive view of the language (see notably the <a href="https://docs.julialang.org">julia docs</a> for a very thorough review), but it can hopefully contribute to ease the access to Julia for some beginners.</p>
-<h2 id="what-is-julia">What is Julia<a class="headerlink" href="#what-is-julia" title="Permanent link">&para;</a></h2>
-<p>Julia is a programming language created in 2009 by a few computer scientists notably at MIT.
-It has its first public version in 2012 and hit its first stable version 1.0 in August 2018.</p>
-<p>Below is exposed the Manifesto of the first public release in 2012 :</p>
-<blockquote>
-<p>We want a language that’s open source, with a liberal license. We want the speed of C with the dynamism of Ruby. We want a language that’s homoiconic, with true macros like Lisp, but with obvious, familiar mathematical notation like Matlab. We want something as usable for general programming as Python, as easy for statistics as R, as natural for string processing as Perl, as powerful for linear algebra as Matlab, as good at gluing programs together as the shell. Something that is dirt simple to learn, yet keeps the most serious hackers happy. We want it interactive and we want it compiled.</p>
-</blockquote>
-<h2 id="for-what-and-whom">For what and whom ?<a class="headerlink" href="#for-what-and-whom" title="Permanent link">&para;</a></h2>
-<p>The creation of Julia was motivated by the observation of a so-called "Two languages problem" in scientific computing.
-This problem is driven by the fact that researchers need high level syntax and dynamism to explore complex and novel ideas, which can be provided by languages such as Python, R, Matlab, but may often need at some point to translate to some fast low-level language (usually Fortran/C).</p>
-<p>Julia was thus designed to those in scientific computing/data science (but also in other applications as it has grown into a general purpose language such as Python) that need to develop new efficient algorithms.</p>
-<p>As it is a new language with a growing but still smaller ecosystem than e.g. Python or R, it is maybe less attractive for now for scientists that are only code/libraries users (even if in some domains the Julia ecosystem is already state of art such as Differential Equations, Optimization,...  and there exists possibility to connect easily to other language ecosystems, see <a href="interop/">this page</a> )</p>
-<h2 id="what-does-it-look-like">What does it look like<a class="headerlink" href="#what-does-it-look-like" title="Permanent link">&para;</a></h2>
-<div class="codehilite"><pre><span></span><span class="k">using</span> <span class="n">LinearAlgebra</span> <span class="c">#load a library</span>
-
-<span class="n">A</span> <span class="o">=</span> <span class="n">rand</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="p">)</span> <span class="c"># create a random matrix A of size 10 by 10</span>
-<span class="n">Y</span> <span class="o">=</span> <span class="n">rand</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span> <span class="c"># create a random vector Y of size 10</span>
-
-<span class="n">X</span> <span class="o">=</span> <span class="n">A</span><span class="o">\</span><span class="n">Y</span> <span class="c"># resolve Y=AX</span>
+                <h1 id="various-scientific-domains-examples">Various scientific domains examples<a class="headerlink" href="#various-scientific-domains-examples" title="Permanent link">&para;</a></h1>
+<p>From the Julia <a href="https://julialang.org">website</a></p>
+<div class="codehilite"><pre><span></span>Julia is designed from the ground up to be very good at numerical and scientific computing. This can be seen in the abundance of scientific tooling written in Julia, such as the state-of-the-art differential equations ecosystem ([DifferentialEquations.jl](https://github.com/JuliaDiffEq/DifferentialEquations.jl)), optimization tools ([JuMP.jl](https://github.com/JuliaOpt/JuMP.jl) and [Optim.jl](http://julianlsolvers.github.io/Optim.jl/stable/)), iterative linear solvers ([IterativeSolvers.jl](https://github.com/JuliaMath/IterativeSolvers.jl)) and many more, that can drive all your simulations.
+Julia also offers a number of domain-specific ecosystems, such as in biology ([BioJulia](https://github.com/BioJulia)), operations research ([JuliaOpt](https://www.juliaopt.org/)), quantum physics ([QuantumOptics](https://github.com/qojulia/QuantumOptics.jl)), nonlinear dynamics ([JuliaDynamics](https://github.com/JuliaDynamics)), quantitative economics ([QuantEcon](https://github.com/QuantEcon)), astronomy ([JuliaAstro](http://juliaastro.github.io/)) and ecology ([EcoJulia](https://github.com/EcoJulia)).
 </pre></div>
 
 
-<div class="codehilite"><pre><span></span><span class="k">function</span> <span class="n">add</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">)</span> <span class="c"># define a function `add`</span>
-  <span class="k">return</span> <span class="n">a</span><span class="o">+</span><span class="n">b</span>
-<span class="k">end</span>
-
-<span class="n">add</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span> <span class="c"># apply the function `add` to 3 and 4</span>
-</pre></div>
-
-
-<h2 id="a-tool-for-doing-better-science">A tool for doing better science<a class="headerlink" href="#a-tool-for-doing-better-science" title="Permanent link">&para;</a></h2>
-<h3 id="high-level-and-efficient">High level and efficient<a class="headerlink" href="#high-level-and-efficient" title="Permanent link">&para;</a></h3>
-<p>By tackling the two language problems, Julia can allow better interaction between researchers and research engineers (see e.g. this very interesting <a href="https://www.youtube.com/watch?v=8ZSaAM8hhJ4">video</a> about the rise of the Reasearch Software Engineer) by becoming a lingua franca.</p>
-<h3 id="build-for-collaboration">Build for collaboration<a class="headerlink" href="#build-for-collaboration" title="Permanent link">&para;</a></h3>
-<p>Julia is a language that really encourages collaboration and factorization of code, by virtue of its design.</p>
+<p>Below are some examples of scientific applications using Jula</p>
+<h2 id="economy">Economy<a class="headerlink" href="#economy" title="Permanent link">&para;</a></h2>
 <ul>
-<li>A Julia Package is almost always synonym of a git/Github repo</li>
-<li>Multiple dispatch calls for generic programming.</li>
-<li>And allows very good composition of packages, where the total is more than the sum of the parts (see e.g. <a href="https://github.com/JuliaPhysics/Measurements.jl">Measurements.jl</a> to get precision for all your packages, <a href="https://github.com/JuliaDiff/ForwardDiff.jl">ForwardDiff.jl</a> to Automatic Derivation,...)</li>
+<li>QuantEcon <a href="https://quantecon.org/">https://quantecon.org/</a></li>
+<li>Estimating Non-Linear Macroeconomic Models at the New York Fed <a href="https://www.youtube.com/watch?v=dFyr8U-SY2M">https://www.youtube.com/watch?v=dFyr8U-SY2M</a></li>
 </ul>
-<p>Also the youth of the language implies that the ecosystem is not (yet) fragmented (it also means that is easier to impact the ecosystem parts that concerns you, a large part of Julia contributors are non computer sciences PhD/postdocs )</p>
+<h2 id="bioinformatics">Bioinformatics<a class="headerlink" href="#bioinformatics" title="Permanent link">&para;</a></h2>
+<ul>
+<li>BioJulia: <a href="https://www.youtube.com/watch?v=6CpPd6tkokQ">https://www.youtube.com/watch?v=6CpPd6tkokQ</a></li>
+<li>Mitos (Mutual Information Tools for protein sequence analysis in Julia language) :  <a href="https://www.youtube.com/watch?v=6L2TGeeLw9g">https://www.youtube.com/watch?v=6L2TGeeLw9g</a></li>
+<li>Unraveling lymphoma tumor microenvironment interactions with Julia <a href="">https://www.youtube.com/watch?v=NQSpMtXaMFQ</a></li>
+</ul>
+<h2 id="ecologybiodiversity">Ecology/Biodiversity<a class="headerlink" href="#ecologybiodiversity" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Julia Ecology group EcoJulia : <a href="">https://www.youtube.com/watch?v=R4GzK-by0ac</a></li>
+<li>Simulating global plant biodiversity <a href="">https://www.youtube.com/watch?v=EahBURR9b1U</a></li>
+</ul>
+<h2 id="stats">Stats<a class="headerlink" href="#stats" title="Permanent link">&para;</a></h2>
+<ul>
+<li>JuliaStats : <a href="">http://juliastats.github.io/</a></li>
+<li>Multiple Testing <a href="https://github.com/juliangehring/MultipleTesting.jl">https://github.com/juliangehring/MultipleTesting.jl</a></li>
+</ul>
+<h2 id="images">Images<a class="headerlink" href="#images" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Julia Images processing group <a href="http://juliaimages.github.io">http://juliaimages.github.io</a></li>
+</ul>
                 
                   
                 
@@ -793,20 +759,20 @@ This problem is driven by the fact that researchers need high level syntax and d
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-        
-          <a href="15_09_2018_training/" title="November 15 training" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../interop/" title="Interop with other languages" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
-                  Next
+                  Previous
                 </span>
-                November 15 training
+                Interop with other languages
               </span>
             </div>
-            <div class="md-flex__cell md-flex__cell--shrink">
-              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
-            </div>
           </a>
+        
         
       </nav>
     </div>
@@ -834,9 +800,9 @@ This problem is driven by the fact that researchers need high level syntax and d
       
     </div>
     
-      <script src="./assets/javascripts/application.b438e6c5.js"></script>
+      <script src="../assets/javascripts/application.b438e6c5.js"></script>
       
-      <script>app.initialize({version:"0.17.3",url:{base:"."}})</script>
+      <script>app.initialize({version:"0.17.3",url:{base:".."}})</script>
       
     
     

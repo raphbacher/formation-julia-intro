@@ -10,7 +10,11 @@
       <meta name="viewport" content="width=device-width,initial-scale=1">
       <meta http-equiv="x-ua-compatible" content="ie=edge">
       
+        <meta name="description" content="An instroduction to the Julia Programming Language">
       
+      
+      
+        <meta name="author" content="Raphael Bacher">
       
       
         <meta name="lang:clipboard.copy" content="Copy to clipboard">
@@ -31,7 +35,7 @@
       
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
-      <link rel="shortcut icon" href="/assets/images/favicon.png">
+      <link rel="shortcut icon" href="/formation-julia-intro/assets/images/favicon.png">
       <meta name="generator" content="mkdocs-0.17.3, mkdocs-material-2.7.3">
     
     
@@ -40,11 +44,13 @@
       
     
     
-      <link rel="stylesheet" href="/assets/stylesheets/application.8d40d89b.css">
+      <link rel="stylesheet" href="/formation-julia-intro/assets/stylesheets/application.8d40d89b.css">
+      
+        <link rel="stylesheet" href="/formation-julia-intro/assets/stylesheets/application-palette.6079476c.css">
       
     
     
-      <script src="/assets/javascripts/modernizr.1aa3b519.js"></script>
+      <script src="/formation-julia-intro/assets/javascripts/modernizr.1aa3b519.js"></script>
     
     
       <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
@@ -58,11 +64,32 @@
     
   </head>
   
-    <body dir="ltr">
+    
+    
+    <body dir="ltr" data-md-color-primary="indigo" data-md-color-accent="indigo">
   
     <svg class="md-svg">
       <defs>
         
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
         
       </defs>
     </svg>
@@ -75,7 +102,7 @@
   <nav class="md-header-nav md-grid">
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
-        <a href="/" title="Julia Introduction" class="md-header-nav__button md-logo">
+        <a href="https://raphbacher.github.io/formation-julia-intro/" title="Julia Introduction" class="md-header-nav__button md-logo">
           
             <i class="md-icon"></i>
           
@@ -129,6 +156,30 @@
         
       </div>
       
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/raphbacher/formation-julia-intro/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      raphbacher/formation-julia-intro
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
     </div>
   </nav>
 </header>
@@ -137,6 +188,80 @@
       
         
       
+      
+        
+
+<nav class="md-tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href="/formation-julia-intro/" title="Home" class="md-tabs__link md-tabs__link--active">
+        Home
+      </a>
+    
+  </li>
+
+      
+        
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="/formation-julia-intro/first_steps/" title="First steps" class="md-tabs__link">
+          First steps
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="/formation-julia-intro/tutorials/01_start_julia/" title="Tutorials" class="md-tabs__link">
+          Tutorials
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="/formation-julia-intro/fast_julia/" title="To go further" class="md-tabs__link">
+          To go further
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="/formation-julia-intro/examples/" title="Scientific applications" class="md-tabs__link">
+          Scientific applications
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
       
       <main class="md-main">
         <div class="md-main__inner md-grid" data-md-component="container">
@@ -155,6 +280,28 @@
     Julia Introduction
   </label>
   
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/raphbacher/formation-julia-intro/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      raphbacher/formation-julia-intro
+    </div>
+  </a>
+
+    </div>
+  
   <ul class="md-nav__list" data-md-scrollfix>
     
       
@@ -163,8 +310,8 @@
 
 
   <li class="md-nav__item">
-    <a href="/" title="What is julia" class="md-nav__link">
-      What is julia
+    <a href="/formation-julia-intro/" title="Home" class="md-nav__link">
+      Home
     </a>
   </li>
 
@@ -175,56 +322,8 @@
 
 
   <li class="md-nav__item">
-    <a href="/first_steps/" title="First steps" class="md-nav__link">
-      First steps
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href="/tools/" title="Tools" class="md-nav__link">
-      Tools
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href="/fast_julia/" title="Fast Julia" class="md-nav__link">
-      Fast Julia
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href="/building_pkg/" title="Building Packages" class="md-nav__link">
-      Building Packages
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href="/interop/" title="Interop with other languages" class="md-nav__link">
-      Interop with other languages
+    <a href="/formation-julia-intro/15_09_2018_training/" title="November 15 training" class="md-nav__link">
+      November 15 training
     </a>
   </li>
 
@@ -236,14 +335,14 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
     
-    <label class="md-nav__link" for="nav-7">
-      Stories
+    <label class="md-nav__link" for="nav-3">
+      First steps
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-7">
-        Stories
+      <label class="md-nav__title" for="nav-3">
+        First steps
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -254,8 +353,8 @@
 
 
   <li class="md-nav__item">
-    <a href="/scripting/" title="I want to use some packages in a script" class="md-nav__link">
-      I want to use some packages in a script
+    <a href="/formation-julia-intro/first_steps/" title="First steps" class="md-nav__link">
+      First steps
     </a>
   </li>
 
@@ -266,8 +365,188 @@
 
 
   <li class="md-nav__item">
-    <a href="/developing/" title="I want to start a package" class="md-nav__link">
-      I want to start a package
+    <a href="/formation-julia-intro/ecosystem/" title="Tools" class="md-nav__link">
+      Tools
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      Tutorials
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Tutorials
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="/formation-julia-intro/tutorials/01_start_julia/" title="Intro" class="md-nav__link">
+      Intro
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="/formation-julia-intro/tutorials/02.Linear_Algebra/" title="Linear Algebra" class="md-nav__link">
+      Linear Algebra
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="/formation-julia-intro/tutorials/03.Using_packages/" title="Using Packages" class="md-nav__link">
+      Using Packages
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="/formation-julia-intro/tutorials/04.Intro_to_plotting/" title="Plotting" class="md-nav__link">
+      Plotting
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="/formation-julia-intro/tutorials/05.Julia_is_fast/" title="Julia is fast" class="md-nav__link">
+      Julia is fast
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="/formation-julia-intro/tutorials/06.Multiple_dispatch/" title="Multiple dispatch" class="md-nav__link">
+      Multiple dispatch
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      To go further
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        To go further
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="/formation-julia-intro/fast_julia/" title="How to get Fast Julia" class="md-nav__link">
+      How to get Fast Julia
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="/formation-julia-intro/interop/" title="Interop with other languages" class="md-nav__link">
+      Interop with other languages
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      Scientific applications
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        Scientific applications
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="/formation-julia-intro/examples/" title="Scientific applications" class="md-nav__link">
+      Scientific applications
     </a>
   </li>
 
@@ -307,6 +586,10 @@
     <div class="md-footer-meta__inner md-grid">
       <div class="md-footer-copyright">
         
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2018 Raphael Bacher
+          </div>
+        
         powered by
         <a href="http://www.mkdocs.org">MkDocs</a>
         and
@@ -322,9 +605,9 @@
       
     </div>
     
-      <script src="/assets/javascripts/application.b438e6c5.js"></script>
+      <script src="/formation-julia-intro/assets/javascripts/application.b438e6c5.js"></script>
       
-      <script>app.initialize({version:"0.17.3",url:{base:""}})</script>
+      <script>app.initialize({version:"0.17.3",url:{base:"/formation-julia-intro"}})</script>
       
     
     

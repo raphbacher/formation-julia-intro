@@ -10,7 +10,13 @@
       <meta name="viewport" content="width=device-width,initial-scale=1">
       <meta http-equiv="x-ua-compatible" content="ie=edge">
       
+        <meta name="description" content="An instroduction to the Julia Programming Language">
       
+      
+        <link rel="canonical" href="https://raphbacher.github.io/formation-julia-intro/first_steps/">
+      
+      
+        <meta name="author" content="Raphael Bacher">
       
       
         <meta name="lang:clipboard.copy" content="Copy to clipboard">
@@ -42,6 +48,8 @@
     
       <link rel="stylesheet" href="../assets/stylesheets/application.8d40d89b.css">
       
+        <link rel="stylesheet" href="../assets/stylesheets/application-palette.6079476c.css">
+      
     
     
       <script src="../assets/javascripts/modernizr.1aa3b519.js"></script>
@@ -58,11 +66,32 @@
     
   </head>
   
-    <body dir="ltr">
+    
+    
+    <body dir="ltr" data-md-color-primary="indigo" data-md-color-accent="indigo">
   
     <svg class="md-svg">
       <defs>
         
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
         
       </defs>
     </svg>
@@ -70,7 +99,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
     
-      <a href="#install-julia" tabindex="1" class="md-skip">
+      <a href="#get-julia" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -79,7 +108,7 @@
   <nav class="md-header-nav md-grid">
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
-        <a href=".." title="Julia Introduction" class="md-header-nav__button md-logo">
+        <a href="https://raphbacher.github.io/formation-julia-intro/" title="Julia Introduction" class="md-header-nav__button md-logo">
           
             <i class="md-icon"></i>
           
@@ -133,6 +162,30 @@
         
       </div>
       
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/raphbacher/formation-julia-intro/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      raphbacher/formation-julia-intro
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
     </div>
   </nav>
 </header>
@@ -141,6 +194,82 @@
       
         
       
+      
+        
+
+  
+
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href=".." title="Home" class="md-tabs__link">
+        Home
+      </a>
+    
+  </li>
+
+      
+        
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="./" title="First steps" class="md-tabs__link md-tabs__link--active">
+          First steps
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../tutorials/01_start_julia/" title="Tutorials" class="md-tabs__link">
+          Tutorials
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../fast_julia/" title="To go further" class="md-tabs__link">
+          To go further
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../examples/" title="Scientific applications" class="md-tabs__link">
+          Scientific applications
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
       
       <main class="md-main">
         <div class="md-main__inner md-grid" data-md-component="container">
@@ -159,6 +288,28 @@
     Julia Introduction
   </label>
   
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/raphbacher/formation-julia-intro/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      raphbacher/formation-julia-intro
+    </div>
+  </a>
+
+    </div>
+  
   <ul class="md-nav__list" data-md-scrollfix>
     
       
@@ -167,8 +318,8 @@
 
 
   <li class="md-nav__item">
-    <a href=".." title="What is julia" class="md-nav__link">
-      What is julia
+    <a href=".." title="Home" class="md-nav__link">
+      Home
     </a>
   </li>
 
@@ -176,6 +327,39 @@
       
       
       
+
+
+  <li class="md-nav__item">
+    <a href="../15_09_2018_training/" title="November 15 training" class="md-nav__link">
+      November 15 training
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+    
+    <label class="md-nav__link" for="nav-3">
+      First steps
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        First steps
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
 
   
 
@@ -206,8 +390,8 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#test-julia-online" title="Test Julia online" class="md-nav__link">
-    Test Julia online
+  <a href="#try-julia-online" title="Try Julia online" class="md-nav__link">
+    Try Julia online
   </a>
   
 </li>
@@ -233,6 +417,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#explore-the-language" title="Explore the language" class="md-nav__link">
+    Explore the language
+  </a>
+  
+</li>
+      
       
       
       
@@ -243,52 +434,21 @@
     
   </li>
 
-    
-      
-      
-      
+        
+          
+          
+          
 
 
   <li class="md-nav__item">
-    <a href="../tools/" title="Tools" class="md-nav__link">
+    <a href="../ecosystem/" title="Tools" class="md-nav__link">
       Tools
     </a>
   </li>
 
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href="../fast_julia/" title="Fast Julia" class="md-nav__link">
-      Fast Julia
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href="../building_pkg/" title="Building Packages" class="md-nav__link">
-      Building Packages
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href="../interop/" title="Interop with other languages" class="md-nav__link">
-      Interop with other languages
-    </a>
+        
+      </ul>
+    </nav>
   </li>
 
     
@@ -299,14 +459,14 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
     
-    <label class="md-nav__link" for="nav-7">
-      Stories
+    <label class="md-nav__link" for="nav-4">
+      Tutorials
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-7">
-        Stories
+      <label class="md-nav__title" for="nav-4">
+        Tutorials
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -317,8 +477,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../scripting/" title="I want to use some packages in a script" class="md-nav__link">
-      I want to use some packages in a script
+    <a href="../tutorials/01_start_julia/" title="Intro" class="md-nav__link">
+      Intro
     </a>
   </li>
 
@@ -329,8 +489,140 @@
 
 
   <li class="md-nav__item">
-    <a href="../developing/" title="I want to start a package" class="md-nav__link">
-      I want to start a package
+    <a href="../tutorials/02.Linear_Algebra/" title="Linear Algebra" class="md-nav__link">
+      Linear Algebra
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tutorials/03.Using_packages/" title="Using Packages" class="md-nav__link">
+      Using Packages
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tutorials/04.Intro_to_plotting/" title="Plotting" class="md-nav__link">
+      Plotting
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tutorials/05.Julia_is_fast/" title="Julia is fast" class="md-nav__link">
+      Julia is fast
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tutorials/06.Multiple_dispatch/" title="Multiple dispatch" class="md-nav__link">
+      Multiple dispatch
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      To go further
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        To go further
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../fast_julia/" title="How to get Fast Julia" class="md-nav__link">
+      How to get Fast Julia
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interop/" title="Interop with other languages" class="md-nav__link">
+      Interop with other languages
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      Scientific applications
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        Scientific applications
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../examples/" title="Scientific applications" class="md-nav__link">
+      Scientific applications
     </a>
   </li>
 
@@ -361,8 +653,8 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#test-julia-online" title="Test Julia online" class="md-nav__link">
-    Test Julia online
+  <a href="#try-julia-online" title="Try Julia online" class="md-nav__link">
+    Try Julia online
   </a>
   
 </li>
@@ -388,6 +680,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#explore-the-language" title="Explore the language" class="md-nav__link">
+    Explore the language
+  </a>
+  
+</li>
+      
       
       
       
@@ -404,34 +703,52 @@
             <article class="md-content__inner md-typeset">
               
                 
+                  <a href="https://github.com/raphbacher/formation-julia-intro/edit/master/docs/first_steps.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
-                <h1 id="install-julia">Install Julia</h1>
-<h2 id="test-julia-online">Test Julia online</h2>
+                
+                <h1 id="get-julia">Get Julia<a class="headerlink" href="#get-julia" title="Permanent link">&para;</a></h1>
+<h2 id="try-julia-online">Try Julia online<a class="headerlink" href="#try-julia-online" title="Permanent link">&para;</a></h2>
 <p>You can try Julia online and for free at <a href="http://juliabox.com">http://juliabox.com</a>.
 You will need to create a account (or log with your Github or Google account)
-Once your are connected</p>
-<h2 id="install-on-your-machine">Install on your machine</h2>
-<p>You can download the Julia binaries from <a href="http://julialang.org/downloads">http://julialang.org/downloads</a></p>
-<p>If you want a all-in-one package you can use the JuliaPro distribution (similar to e.g. Anaconda for Python). The JuliaPro distribution is free but requires a registration for downloading and installing new packages.</p>
-<h2 id="the-repl">The REPL</h2>
-<p>Once Julia is installed, you can launch the Julia REPL ("Read Eval Print Line", like the R or python/ipython command line)</p>
-<p>The REPL of Julia is very powerful.</p>
+Once your are connected, you will be able to launch a jupyter server (the Launch button). You can then go .
+You can if you want, follow an online presentation of these notebooks here : <a href="">https://www.youtube.com/watch?v=fMa1qSg_LxA</a></p>
+<h2 id="install-on-your-machine">Install on your machine<a class="headerlink" href="#install-on-your-machine" title="Permanent link">&para;</a></h2>
+<p>You can download the Julia binaries from <a href="http://julialang.org/downloads">http://julialang.org/downloads</a>
+and follow instruction <a href="https://julialang.org/downloads/platform.html#generic-binaries">here</a>.</p>
+<p>If you want a all-in-one package (meaning coming with a list of curated Julia packages) you can use the JuliaPro distribution (similar to e.g. Anaconda for Python). The JuliaPro distribution is free but requires a registration for downloading and installing new packages (note that as of November 2018 I personally recommend using directly the Julia installer as the JuliaPro list of packages is quite limited right now and thus requires some manipulations to access the whole ecosystem)</p>
+<h2 id="the-repl">The REPL<a class="headerlink" href="#the-repl" title="Permanent link">&para;</a></h2>
+<p>Once Julia is installed, you can launch the Julia REPL ("Read Eval Print Line", similar to the R or Python/IPython command line).</p>
+<p>To launch the Julia REPL, just type <code>julia</code> in a terminal in Linux/Mac if you have indeed put julia in your path (see <a href="https://julialang.org/downloads/platform.html#generic-binaries">here</a>)</p>
+<p>The REPL of Julia is a very powerful tool to interact with Julia. It provides several "modes"</p>
 <ul>
 <li>Shell mode : start with a ";" (e.g. <code>;ls</code> )</li>
 <li>Package mode : start with a "]" (e.g. <code>]add Plots</code> )</li>
 <li>Help mode : start with a "?" (e.g. <code>?cos</code> )</li>
 </ul>
-<h2 id="in-a-file">In a file</h2>
-<p>In toto.jl :</p>
-<pre><code class="julia">function addfunc(a,b)
-    return a+b
-end
+<p>You can then write directly your command e.g.</p>
+<div class="codehilite"><pre><span></span>4+3
+</pre></div>
 
-addfunc(3,4)
-</code></pre>
 
-<p>Then in the REPL
-<code>include(toto.jl)</code></p>
+<p>and see the result immediately.</p>
+<h2 id="in-a-file">In a file<a class="headerlink" href="#in-a-file" title="Permanent link">&para;</a></h2>
+<p>Write the following in a <em>toto.jl</em> file :</p>
+<div class="codehilite"><pre><span></span><span class="k">function</span> <span class="n">addfunc</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">a</span><span class="o">+</span><span class="n">b</span>
+<span class="k">end</span>
+
+<span class="n">print</span><span class="p">(</span><span class="n">addfunc</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">))</span>
+</pre></div>
+
+
+<p>From a terminal you can then execute this file by typing</p>
+<div class="codehilite"><pre><span></span>julia toto.jl
+</pre></div>
+
+
+<p>Note that you can also execute this file in the REPL by typing <code>include(toto.jl)</code></p>
+<h2 id="explore-the-language">Explore the language<a class="headerlink" href="#explore-the-language" title="Permanent link">&para;</a></h2>
+<p>The Julia community and Julia Computing provide a extensive <a href="https://github.com/JuliaComputing/JuliaBoxTutorials">list of introductory notebooks</a> (a subset of which are exploited in the <a href="../tutorials">tutorials section</a>)</p>
                 
                   
                 
@@ -452,7 +769,7 @@ addfunc(3,4)
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href=".." title="What is julia" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../15_09_2018_training/" title="November 15 training" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -461,13 +778,13 @@ addfunc(3,4)
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                What is julia
+                November 15 training
               </span>
             </div>
           </a>
         
         
-          <a href="../tools/" title="Tools" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../ecosystem/" title="Tools" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
@@ -487,6 +804,10 @@ addfunc(3,4)
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
       <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2018 Raphael Bacher
+          </div>
         
         powered by
         <a href="http://www.mkdocs.org">MkDocs</a>
