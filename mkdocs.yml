@@ -1,12 +1,12 @@
 site_name: Julia Introduction
 theme: material
 pages:
-    - What is julia: whatisjulia.md
+    - What is julia: index.md
     - First steps : first_steps.md
     - Tools : tools.md
     - Fast Julia: fast_julia.md
     - Building Packages: building_pkg.md
     - Interop with other languages: interop.md
     - Stories:
-            - I want to use some packages in a script
-            - I want to start a package
+            - "I want to use some packages in a script": scripting.md
+            - "I want to start a package": developing.md
