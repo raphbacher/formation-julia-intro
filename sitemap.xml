@@ -60,12 +60,6 @@
     </url>
         
     <url>
-     <loc>https://raphbacher.github.io/formation-julia-intro//tutorials/05.Julia_is_fast/</loc>
-     <lastmod>2018-11-14</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
      <loc>https://raphbacher.github.io/formation-julia-intro//tutorials/06.Multiple_dispatch/</loc>
      <lastmod>2018-11-14</lastmod>
      <changefreq>daily</changefreq>
