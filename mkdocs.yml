@@ -1,12 +1,54 @@
+# Project information
 site_name: Julia Introduction
-theme: material
+site_description: 'An introduction to the Julia Programming Language'
+site_author: 'Raphael Bacher'
+site_url: 'https://raphbacher.github.io/formation-julia-intro/'
+
+# Repository
+repo_name: 'raphbacher/formation-julia-intro'
+repo_url: 'https://github.com/raphbacher/formation-julia-intro'
+
+# Copyright
+copyright: 'Copyright &copy; 2018 Raphael Bacher'
+
+# Configuration
+theme:
+  name: 'material'
+  language: 'en'
+  palette:
+    primary: 'indigo'
+    accent: 'indigo'
+  font:
+    text: 'Roboto'
+    code: 'Roboto Mono'
+  feature:
+      tabs: true
+
 pages:
-    - What is julia: index.md
-    - First steps : first_steps.md
-    - Tools : tools.md
-    - Fast Julia: fast_julia.md
-    - Building Packages: building_pkg.md
-    - Interop with other languages: interop.md
-    - Stories:
-            - "I want to use some packages in a script": scripting.md
-            - "I want to start a package": developing.md
+    - Home: 'index.md'
+    - November 15 training: '15_09_2018_training.md'
+    - February 14 & 15 training: '14_02_2019_training.md'
+    - First steps:
+        - 'First steps': 'first_steps.md'
+        - 'Tools': 'ecosystem.md'
+    - Tutorials:
+        - 'Syntaxe': 'tutorials/01.Getting_to_know_Julia.html'
+        - 'Linear Algebra': 'tutorials/02.Linear_Algebra.html'
+        - 'Using Packages': 'tutorials/03.Using_packages.html'
+        - 'Plotting': 'tutorials/04.Intro_to_plotting.html'
+        #- 'Julia is fast': 'tutorials/05.Julia_is_fast.html'
+        - 'Multiple dispatch': 'tutorials/06.Multiple_dispatch.html'
+    - To go further:
+        #- 'How to get Fast Julia': 'fast_julia.md'
+        - 'Interop with other languages': 'interop.md'
+    - Scientific applications:
+        - Scientific applications: 'examples.md'
+
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+  - toc:
+      permalink: true
+extra_css:
+    - css/extra.css
