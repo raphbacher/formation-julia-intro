@@ -688,15 +688,15 @@
 <h2 id="try-julia-online">Try Julia online<a class="headerlink" href="#try-julia-online" title="Permanent link">&para;</a></h2>
 <p>You can try Julia online and for free at <a href="http://juliabox.com">http://juliabox.com</a>.
 You will need to create a account (or log with your Github or Google account)
-Once your are connected, you will be able to launch a jupyter server (the Launch button). You can then go .
+Once your are connected, you will be able to launch a jupyter server (the Launch button). You can then go inside the tutorials directory to play with the given notebooks.
 You can if you want, follow an online presentation of these notebooks here : <a href="">https://www.youtube.com/watch?v=fMa1qSg_LxA</a></p>
 <h2 id="install-on-your-machine">Install on your machine<a class="headerlink" href="#install-on-your-machine" title="Permanent link">&para;</a></h2>
 <p>You can download the Julia binaries from <a href="http://julialang.org/downloads">http://julialang.org/downloads</a>
 and follow instruction <a href="https://julialang.org/downloads/platform.html#generic-binaries">here</a>.</p>
-<p>If you want a all-in-one package (meaning coming with a list of curated Julia packages) you can use the JuliaPro distribution (similar to e.g. Anaconda for Python). The JuliaPro distribution is free but requires a registration for downloading and installing new packages (note that as of November 2018 I personally recommend using directly the Julia installer as the JuliaPro list of packages is quite limited right now and thus requires some manipulations to access the whole ecosystem)</p>
+<p>If you want a all-in-one package (meaning coming with a list of curated Julia packages) you can use the JuliaPro distribution (similar to e.g. Anaconda for Python). The JuliaPro distribution is free but requires a registration for downloading and installing new packages (note that as of February 2019 I personally recommend using directly the Julia installer as the JuliaPro list of packages is still limited right now and thus requires some manipulations to access the whole ecosystem)</p>
 <h2 id="the-repl">The REPL<a class="headerlink" href="#the-repl" title="Permanent link">&para;</a></h2>
 <p>Once Julia is installed, you can launch the Julia REPL ("Read Eval Print Line", similar to the R or Python/IPython command line).</p>
-<p>To launch the Julia REPL, just type <code>julia</code> in a terminal in Linux/Mac if you have indeed put julia in your path (see <a href="https://julialang.org/downloads/platform.html#generic-binaries">here</a>)</p>
+<p>To launch the Julia REPL, just type <code>julia</code> in a terminal in Linux/Mac if you have indeed put <code>julia</code> in your path (see <a href="https://julialang.org/downloads/platform.html#generic-binaries">here</a>)</p>
 <p>The REPL of Julia is a very powerful tool to interact with Julia. It provides several "modes"</p>
 <ul>
 <li>Shell mode : start with a ";" (e.g. <code>;ls</code> )</li>
@@ -724,7 +724,8 @@ and follow instruction <a href="https://julialang.org/downloads/platform.html#ge
 </pre></div>
 
 
-<p>Note that you can also execute this file in the REPL by typing <code>include(toto.jl)</code></p>
+<p>Note that you can also execute this file in the REPL by typing <code>include(toto.jl)</code>. This command basically copies the content of toto.jl in the REPL.
+<strong>In fact it is more efficient to execute the file with include inside a living REPL than execute a script from a classic shell with the julia command because of the JIT overhead of launching julia</strong></p>
 <h2 id="explore-the-language">Explore the language<a class="headerlink" href="#explore-the-language" title="Permanent link">&para;</a></h2>
 <p>The Julia community and Julia Computing provide a extensive <a href="https://github.com/JuliaComputing/JuliaBoxTutorials">list of introductory notebooks</a> (a subset of which are exploited in the <a href="../tutorials">tutorials section</a>)</p>
                 

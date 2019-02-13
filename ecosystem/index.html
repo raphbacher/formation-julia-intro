@@ -752,8 +752,8 @@
 <p>JuliaPro is a distribution of curated packages for Julia (as Anaconda for Python, or Matlab with a set of toolboxes). It is provided freely (but requires a registration to download and install packages) by JuliaComputing.</p>
 <p>JuliaBox is an online environment (based on Jupyter notebooks) with Julia (and some packages) preinstalled. You can also use it freely (or pay for more computational resources). It also provides a large number of example notebooks to learn Julia.</p>
 <h2 id="the-repl">The REPL<a class="headerlink" href="#the-repl" title="Permanent link">&para;</a></h2>
-<p>When you launch the Julia REPL, you are running a Julia process. While this process is not stopped</p>
-<p>By default variables defined in the REPL outside of a function or loop/block are <em>global</em> which means that for example  (in Julia 1.0.1) you must do that</p>
+<p>When you launch the Julia REPL, you are running a Julia process. While this process is not stopped you can profit from the incremental just-in-time compilation of your functions (that is your functions are compiled on the first run, which can thus be much slower than following calls). </p>
+<p>By default variables defined in the REPL outside of a function or loop/block are <em>global</em> which means that for example  (in Julia 1.1) you must do :</p>
 <div class="codehilite"><pre><span></span><span class="n">a</span><span class="o">=</span><span class="mi">2</span>
 <span class="k">for</span> <span class="n">i</span> <span class="kp">in</span> <span class="mi">1</span><span class="o">:</span><span class="mi">10</span>
   <span class="c"># a = a + 3 # will result in error</span>
@@ -762,7 +762,7 @@
 </pre></div>
 
 
-<p>Indeed to be able to write on a variable outside of the loop you need to acknowledge the fact that a is global , or put everything inside a function (which defines its own local scope).</p>
+<p>Indeed to be able to write on a variable outside of the loop you need to acknowledge the fact that a is global, or put everything inside a function (which defines its own local scope).</p>
 <h2 id="editors">Editors<a class="headerlink" href="#editors" title="Permanent link">&para;</a></h2>
 <p>You can use any editor and the REPL but some tools (IDE) are developed in the community especially to ease data analysis and exploration.</p>
 <h3 id="jupyter">Jupyter<a class="headerlink" href="#jupyter" title="Permanent link">&para;</a></h3>
